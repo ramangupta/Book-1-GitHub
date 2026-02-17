@@ -1,4 +1,4 @@
-# Chapter 15 — Contributing to Open Source Projects
+# Chapter 21 — Contributing to Open Source Projects
 
 Open source is the foundation of modern software.
 

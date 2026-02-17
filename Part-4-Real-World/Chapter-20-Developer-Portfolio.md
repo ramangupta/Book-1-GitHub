@@ -1,4 +1,4 @@
-# Chapter 14 — Building Your Public Developer Portfolio
+# Chapter 20 — Building Your Public Developer Portfolio
 
 Until now, you have been using GitHub as a tool.
 

@@ -1,4 +1,4 @@
-# Chapter 17 — Git Reset (Undo Commits)
+# Chapter 16 — Git Reset (Undo Commits)
 
 Sometimes you may commit something by mistake.
 

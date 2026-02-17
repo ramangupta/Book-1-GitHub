@@ -1,4 +1,4 @@
-# Chapter 20 — Merge Conflicts and Resolution
+# Chapter 19 — Merge Conflicts and Resolution
 
 Git allows multiple branches.
 

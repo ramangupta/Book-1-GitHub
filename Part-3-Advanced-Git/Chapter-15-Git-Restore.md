@@ -1,4 +1,4 @@
-# Chapter 16 — Git Restore (Undo File Changes Safely)
+# Chapter 15 — Git Restore (Undo File Changes Safely)
 
 Mistakes are a normal part of development.
 

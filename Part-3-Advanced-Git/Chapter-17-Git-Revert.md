@@ -1,4 +1,4 @@
-# Chapter 18 — Git Revert (Safe Undo for Shared Projects)
+# Chapter 17 — Git Revert (Safe Undo for Shared Projects)
 
 In the previous chapter, you learned about `git reset`.
 

@@ -1,4 +1,4 @@
-# Chapter 15 — .gitignore (Ignoring Unnecessary Files)
+# Chapter 14 — .gitignore (Ignoring Unnecessary Files)
 
 In real-world projects, not every file should be tracked by Git.
 

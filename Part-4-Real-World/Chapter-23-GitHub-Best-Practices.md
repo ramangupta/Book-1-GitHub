@@ -1,4 +1,4 @@
-# Chapter 17 — GitHub Best Practices
+# Chapter 23 — GitHub Best Practices
 
 You now know how to use Git and GitHub.
 

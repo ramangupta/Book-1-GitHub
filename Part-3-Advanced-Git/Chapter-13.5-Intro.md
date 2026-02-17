@@ -1,4 +1,4 @@
-# Chapter 14 — Introduction to Advanced Git (Gaining Full Control)
+# Part 3 — Introduction to Advanced Git (Gaining Full Control)
 
 In Part 1, you learned the foundations of Git.
 

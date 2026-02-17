@@ -1,4 +1,4 @@
-# Chapter 7.5 — Introduction to Professional Git Workflow
+# Part 2 — Foundations Introduction to Professional Git Workflow
 
 In Part 1, you learned how to use Git as an individual developer.
 

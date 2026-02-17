@@ -1,4 +1,4 @@
-# Chapter 19 — Git Stash (Temporarily Save Work)
+# Chapter 18 — Git Stash (Temporarily Save Work)
 
 Sometimes you may be working on something that is not finished.
 

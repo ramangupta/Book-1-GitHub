@@ -1,4 +1,4 @@
-# Chapter 16 — Using GitHub with VSCode
+# Chapter 22 — Using GitHub with VSCode
 
 Until now, you have used Git through the terminal.
 
