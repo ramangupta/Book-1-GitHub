@@ -59,17 +59,31 @@ Untracked files:
 ideas.txt
 ```
 
-Untracked means Git sees the file but is not tracking it yet.
+Untracked means Git sees the file but is not tracking it yet. Untracked files are files in your project folder that Git has noticed exists but hasn’t started tracking yet.
+
+To track them, we use git add.
+
+File States in Git:
+
+File Name       State
+---------       -----
+example.txt     untracked   → just created, not yet staged
+example.txt     staged      → added with 'git add', ready to commit
+example.txt     committed   → saved in Git history
+
+![Git Stages](../images/Git_3_stages.png)
 
 ---
 
-## Step 3 — Add the New File
+## Step 3 — Add the New File (Staging)
 
 Run:
 
 ```bash
 git add ideas.txt
 ```
+Staging means telling Git, “Include this file in the next commit.”
+Until you commit, the file isn’t saved in history.
 
 Now check status:
 

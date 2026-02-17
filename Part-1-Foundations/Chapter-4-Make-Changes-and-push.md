@@ -1,5 +1,7 @@
 # Chapter 4 — Making Changes and Updating GitHub
 
+“Now that your project is online, you’ll often make updates — and each & every update has to be saved locally and then shared online.”
+
 Software projects are never written once.
 
 They evolve.
@@ -59,6 +61,7 @@ Run:
 ```bash
 git status
 ```
+“This tells Git what files have changed since the last commit.”
 
 You will see:
 
@@ -122,6 +125,7 @@ Run:
 ```bash
 git push
 ```
+“You must commit first, because git push only uploads commits that already exist.”
 
 Git will upload your changes to GitHub.
 
@@ -189,6 +193,7 @@ Example:
 commit 9a5b1d3 Updated notes.txt with new line
 commit 7f3a8c2 Initial commit
 ```
+“Each line in git log is a commit with its unique hash and message — you can return to any point later.”
 
 You can always go back to previous versions.
 

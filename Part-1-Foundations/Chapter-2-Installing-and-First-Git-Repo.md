@@ -23,10 +23,24 @@ git version 2.34.1
 
 If not installed, install using:
 
+### Windows
+1. Go to https://git‑scm.com/download/win  
+2. Download the installer and run it.  
+3. Use the **default options** unless you have a reason to change them.
+
+### macOS
+1. On macOS, you can install Git using Homebrew:
+   ```bash
+   brew install git
+
+### Linux
+
 ```bash
 sudo apt update
 sudo apt install git
 ```
+
+(Make sure the installation completes without errors.)
 
 Verify again:
 

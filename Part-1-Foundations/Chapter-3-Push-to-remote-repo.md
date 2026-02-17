@@ -1,20 +1,14 @@
 # Chapter 3 — Connecting Your Project to GitHub
 
-Until now, your repository exists only on your local computer.
-
-This means:
-
+Until now, your repository exists only on your local computer. This means:
 - If your computer crashes, your project is lost
 - No one else can see your work
 - You cannot collaborate
 - Your project is not backed up
 
-GitHub solves this.
-
-GitHub stores your repository on the internet.
+GitHub solves this. GitHub stores your repository on the internet.
 
 This allows you to:
-
 - Back up your project safely
 - Access it from anywhere
 - Share it with the world
@@ -24,52 +18,25 @@ This allows you to:
 
 ## Step 1 — Create a GitHub Account
 
-Go to:
-
-https://github.com
-
-Click:
-
-Create Account
-
-Follow the instructions.
-
+Go to: https://github.com  
+Click: Create Account  
+Follow the instructions.  
 Choose a professional username.
 
 ---
 
 ## Step 2 — Create a New Repository on GitHub
 
-After login, click the "+" icon at top right.
-
-Click:
-
-New repository
-
+After login, click the “+” icon at top right.  
+Click: New repository  
 You will see a form.
 
-Fill it like this:
-
-Repository name:
-
-my-first-project
-
-Description:
-
-My first GitHub project
-
-Select:
-
-Public
-
-DO NOT check:
-
-Initialize with README
-
-Click:
-
-Create repository
-
+Fill it like this:  
+Repository name: my-first-project  
+Description: My first GitHub project  
+Select: Public  
+DO NOT check: Initialize with README  
+Click: Create repository
 
 ---
 
@@ -82,10 +49,11 @@ git remote add origin https://github.com/yourusername/my-first-project.git
 git branch -M main
 git push -u origin main
 ```
+Here, origin is the name Git uses for the remote repository and main is the branch you’re pushing to.
 
 These commands connect your local repository to GitHub.
 
-## Step 4 - Run these commands in your terminal
+## Step 4 — Run these commands in your terminal
 
 Make sure you are inside your project folder:
 
@@ -117,7 +85,7 @@ git push -u origin main
 
 This uploads your project to GitHub.
 
-## Step 5 - Authentication
+## Step 5 — Authentication
 
 GitHub may ask for:
 
@@ -150,6 +118,7 @@ Stored on your computer
 **Remote repository**  
 Stored on GitHub
 
+To bring remote changes back to your local repo, you would use git pull later.
 
 Git keeps them synchronized.
 

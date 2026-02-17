@@ -53,12 +53,16 @@ Run:
 git pull
 ```
 
+> Git connects to GitHub, downloads new commits, and updates your local files.
+
 Output example:
 
 ```bash
 Updating 7f3a8c2..9d4b21a
 1 file changed
 ```
+
+This means Git successfully downloaded and applied changes.
 
 Git downloads and updates your files.
 
@@ -106,6 +110,11 @@ git pull
 newfile.txt appears.
 
 This keeps both machines synchronized.
+
+git pull downloads changes from GitHub and updates your local repository so both stay synchronized. Internally, it runs two commands:
+
+- git fetch (downloads changes)
+- git merge (applies them locally)
 
 ---
 
