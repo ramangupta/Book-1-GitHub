@@ -1,288 +1,241 @@
-# Chapter 10 — Fixing Mistakes
+# Chapter 10 — Fixing Mistakes (Recovering Safely with Git)
 
-Mistakes are normal in software development.
+Mistakes are a normal part of software development.
 
-Git makes mistakes safe.
+Every developer makes mistakes.
 
-You can fix errors, undo changes, and restore previous versions at any time.
+You may:
 
-This is one of Git’s most powerful features.
+* Modify the wrong file
+* Add incorrect content
+* Commit too early
+* Delete something accidentally
 
-You are never trapped.
+Without version control, mistakes can be dangerous.
 
----
+You may lose important work permanently.
 
-# Types of Mistakes
+Git solves this problem.
 
-There are four common mistake types:
-
-1. Modified file, but not committed
-2. Added file, but not committed
-3. Committed mistake
-4. Want to restore older version
-
-Git can fix all of them.
+Git allows you to safely recover from mistakes.
 
 ---
 
-# Case 1 — Modified File, Not Committed
+## How Git Protects You
 
-You edited a file:
+Git saves your project as a series of commits.
 
-```bash
-code notes.txt
-```
+Each commit is a snapshot of your project at a specific moment.
 
-Added wrong content.
+Think of commits like save points in a game.
 
-But you did NOT run git add or git commit.
+You can always go back to a previous save point.
 
-Check status:
-
-```bash
-git status
-```
-
-Output:
-
-```
-modified: notes.txt
-```
-
-To discard changes:
-
-```bash
-git checkout -- notes.txt
-```
-
-File returns to last committed version.
-
-Mistake is gone.
-
----
-
-# Case 2 — File Added, But Not Committed
-
-You ran:
-
-```bash
-git add notes.txt
-```
-
-But want to undo.
-
-Run:
-
-```bash
-git reset notes.txt
-```
-
-This removes file from staging area.
-
-File remains unchanged.
-
-Only staging is undone.
-
----
-
-# Case 3 — Wrong Commit Message
-
-You committed:
-
-```bash
-git commit -m "Wrong message"
-```
-
-Fix it:
-
-```bash
-git commit --amend -m "Correct message"
-```
-
-Git replaces the commit message.
-
-No code is lost.
-
----
-
-# Case 4 — Committed Wrong Changes
-
-You committed bad code.
-
-View commits:
-
-```bash
-git log
-```
-
-Output:
-
-```
-commit a1b2c3d
-commit e4f5g6h
-commit i7j8k9l
-```
-
-Each commit has unique ID.
-
-Restore previous version:
-
-```bash
-git checkout a1b2c3d
-```
-
-Project returns to that state.
-
-You can recover anything.
-
----
-
-# Case 5 — Undo Last Commit (Keep File Changes)
-
-Run:
-
-```bash
-git reset --soft HEAD~1
-```
-
-Result:
-
-Last commit removed.
-
-File changes remain.
-
-You can recommit correctly.
-
----
-
-# Case 6 — Undo Last Commit Completely
-
-Run:
-
-```bash
-git reset --hard HEAD~1
-```
-
-Result:
-
-Last commit removed.
-
-File changes also removed.
-
-Warning: This permanently deletes changes.
-
-Use carefully.
-
----
-
-# Understanding HEAD
-
-HEAD means current commit.
-
-HEAD~1 means previous commit.
-
-HEAD~2 means two commits before.
-
-Example:
-
-```
-A → B → C → D (HEAD)
-```
-
-HEAD~1 → C
-HEAD~2 → B
-
-Git moves back safely.
-
----
-
-# View What Changed
-
-Run:
-
-```bash
-git diff
-```
-
-Shows exact changes.
-
-This helps identify mistakes.
-
----
-
-# Safe Recovery Principle
-
-Git stores complete history.
-
-Nothing is truly lost unless force deleted.
+Your work is never truly lost.
 
 This makes Git extremely safe.
 
 ---
 
-# Professional Reality
+## View Project History
 
-Developers fix mistakes daily.
-
-Git allows:
-
-* Undo errors
-* Restore files
-* Recover old versions
-* Experiment safely
-
-Without Git, mistakes can destroy projects.
-
-With Git, mistakes are harmless.
-
----
-
-# Summary
-
-You learned how to:
-
-Discard file changes:
-
-```bash
-git checkout -- file.txt
-```
-
-Unstage file:
-
-```bash
-git reset file.txt
-```
-
-Fix commit message:
-
-```bash
-git commit --amend
-```
-
-Undo last commit safely:
-
-```bash
-git reset --soft HEAD~1
-```
-
-Undo last commit permanently:
-
-```bash
-git reset --hard HEAD~1
-```
-
-View commit history:
+To see your commit history, run:
 
 ```bash
 git log
 ```
 
+Example output:
+
+```bash
+commit a1b2c3d4e5f6g7h8i9j0
+Author: Your Name
+Date: Today
+
+Added new feature
+```
+
+Each commit has a unique ID.
+
+This ID allows Git to track every change.
+
 ---
 
-# Result
+## Common Mistake Scenario
 
-You now have full control over mistakes.
+Imagine you modify a file incorrectly.
 
-You can safely experiment without fear.
+Example:
 
-This is why Git is trusted worldwide.
+```bash
+nano notes.txt
+```
+
+You accidentally delete important content.
+
+You save the file.
+
+This is a mistake.
+
+Git can restore the correct version.
+
+---
+
+## Check Current Status
+
+Run:
+
+```bash
+git status
+```
+
+Git will show modified files.
+
+This tells you what has changed.
+
+---
+
+## Restore File to Last Committed Version
+
+Command:
+
+```bash
+git restore notes.txt
+```
+
+This restores the file to its last committed state.
+
+Your mistake is removed.
+
+Your safe version is restored.
+
+---
+
+## If You Already Staged the File
+
+If you used:
+
+```bash
+git add notes.txt
+```
+
+You can unstage it:
+
+```bash
+git restore --staged notes.txt
+```
+
+This removes the file from staging.
+
+Your file returns to modified state.
+
+---
+
+## Undo Last Commit (Keep Changes)
+
+If you committed too early, run:
+
+```bash
+git reset --soft HEAD~1
+```
+
+This removes the last commit.
+
+Your changes remain in the working directory.
+
+You can fix and commit again.
+
+---
+
+## Undo Last Commit (Remove Changes Completely)
+
+If you want to completely remove the last commit and its changes:
+
+```bash
+git reset --hard HEAD~1
+```
+
+This permanently removes the commit and changes.
+
+Use this carefully.
+
+---
+
+## Important Safety Concept
+
+Git does not delete commits immediately.
+
+Git keeps history safely.
+
+Most mistakes can be recovered.
+
+This makes Git reliable and safe.
+
+Professional developers trust Git because of this protection.
+
+---
+
+## Professional Workflow Protection
+
+Developers use commits regularly.
+
+Each commit creates a recovery point.
+
+If something breaks, developers restore a previous commit.
+
+This prevents permanent damage.
+
+Git allows safe experimentation.
+
+---
+
+## Commands Learned
+
+View history:
+
+```bash
+git log
+```
+
+Restore file:
+
+```bash
+git restore filename
+```
+
+Unstage file:
+
+```bash
+git restore --staged filename
+```
+
+Undo last commit (keep changes):
+
+```bash
+git reset --soft HEAD~1
+```
+
+Undo last commit (remove changes):
+
+```bash
+git reset --hard HEAD~1
+```
+
+---
+
+## What You Achieved
+
+You learned how to safely recover from mistakes.
+
+You can now:
+
+* Restore files
+* Undo commits
+* Recover from errors
+* Protect your project
+
+This gives you complete control over your project.
+
+Mistakes are no longer dangerous.
+
+Git makes development safe.

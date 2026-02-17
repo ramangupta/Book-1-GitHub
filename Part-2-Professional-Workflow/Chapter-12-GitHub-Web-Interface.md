@@ -1,97 +1,109 @@
-# Chapter 12 — GitHub Web Interface
+# Chapter 12 — GitHub Web Interface (Managing Projects Visually)
 
 Until now, you have used Git through the terminal.
 
-But GitHub also provides a powerful **web interface**.
+You created repositories.
+You added files.
+You committed changes.
+You created branches.
+You merged changes.
 
-This allows you to:
+All using commands.
 
-* View your code
-* Browse files
-* See commit history
-* Edit files
-* Manage branches
-* Review changes
+But professional developers also use GitHub’s web interface.
 
-All from your browser.
+GitHub provides a visual interface to view and manage your project.
 
-No terminal required.
+This makes it easier to understand and control your repository.
 
 ---
 
-# Open Your Repository on GitHub
+## What is GitHub Web Interface
 
-Go to:
+GitHub Web Interface is the website where your repository is hosted.
+
+It allows you to:
+
+* View files
+* View commits
+* View branches
+* View history
+* Create and edit files
+* Manage your project
+
+All without using the terminal.
+
+GitHub provides a complete visual control system for your repository.
+
+---
+
+## Open Your Repository
+
+Go to your browser.
+
+Open:
 
 ```
-https://github.com/yourusername/my-first-project
+https://github.com/yourusername/your-repository
 ```
 
 You will see your repository dashboard.
-
-It contains:
-
-* File list
-* Commit history
-* Branch selector
-* Settings
-* Insights
 
 This is your project control center.
 
 ---
 
-# View Files
+## Viewing Files
 
-Click any file.
+The main page shows all files in your repository.
 
 Example:
 
 ```
 notes.txt
+feature.txt
+README.md
 ```
 
-GitHub shows:
+You can click any file to view its contents.
 
-* File contents
-* Commit history
-* Last modified date
+GitHub shows the exact contents stored in your repository.
 
-You can browse your entire project.
+This allows you to inspect your project easily.
 
 ---
 
-# View Commit History
+## Viewing Commit History
 
-Click:
-
-```
-Commits
-```
+Click the **"Commits"** button.
 
 You will see a list like:
 
 ```
-Added login feature
+Added new feature
 Fixed bug
-Initial commit
+Created project
 ```
 
-Click any commit.
+Each commit shows:
 
-GitHub shows:
+* Commit message
+* Author
+* Date
 
-* Files changed
-* Lines added
-* Lines removed
+This is the same history you saw using:
 
-You can inspect every change.
+```bash
+git log
+```
+
+But now you can see it visually.
 
 ---
 
-# View Branches
+## Viewing Branches
 
-Click branch selector.
+Click the **"Branch"** dropdown.
 
 Example:
 
@@ -100,175 +112,107 @@ main
 new-feature
 ```
 
+This shows all branches in your repository.
+
 You can switch between branches.
 
-GitHub updates the file view instantly.
+GitHub will show files for that branch.
 
-Each branch shows its own version.
-
----
-
-# Edit Files Directly on GitHub
-
-Open a file.
-
-Click the edit icon (pencil symbol).
-
-Make changes.
-
-Example:
-
-```
-This file was edited on GitHub.
-```
-
-Scroll down.
-
-Enter commit message:
-
-```
-Updated notes.txt from GitHub
-```
-
-Click:
-
-```
-Commit changes
-```
-
-GitHub creates a new commit.
-
-No terminal needed.
+This helps visualize branch structure.
 
 ---
 
-# Create New File on GitHub
+## Viewing Individual Commits
 
-Click:
+Click any commit.
 
-```
-Add file → Create new file
-```
+GitHub will show:
 
-Enter filename:
+* Files changed
+* Lines added
+* Lines removed
 
-```
-readme.md
-```
+This allows you to inspect exact changes.
 
-Add content.
-
-Click:
-
-```
-Commit changes
-```
-
-File is created instantly.
+This is extremely useful for debugging and review.
 
 ---
 
-# Delete File on GitHub
+## Editing Files Directly in GitHub
 
-Open file.
+You can edit files without using terminal.
 
-Click delete icon.
+Steps:
 
-Enter commit message.
+1. Open a file
+2. Click the edit icon (pencil icon)
+3. Make changes
+4. Click Commit changes
 
-Click:
+GitHub will create a new commit.
 
-```
-Commit changes
-```
-
-File is deleted safely.
-
-Git still keeps history.
-
-Nothing is permanently lost.
+Your project is updated.
 
 ---
 
-# Download Repository from GitHub
+## GitHub and Git Work Together
 
-Click:
+Git works locally on your computer.
 
-```
-Code → Download ZIP
-```
+GitHub works remotely on the server.
 
-GitHub downloads full project.
+Together they create a complete version control system.
 
-This is useful for backups.
+Git tracks changes.
 
----
+GitHub stores and shares changes.
 
-# View Repository Insights
-
-Click:
-
-```
-Insights
-```
-
-GitHub shows:
-
-* Commit frequency
-* Contributors
-* Activity timeline
-
-This helps analyze project growth.
+This makes collaboration possible.
 
 ---
 
-# Why GitHub Interface is Important
+## Professional Workflow with GitHub
 
-The web interface allows you to:
+Professional developers use both:
 
-* Work without terminal
-* Review code easily
-* Collaborate visually
-* Inspect history quickly
+Terminal for development
+GitHub for management and review
 
-It makes Git accessible.
+GitHub allows teams to:
 
----
-
-# Professional Usage
-
-Developers use GitHub web interface to:
-
-* Review pull requests
-* Inspect commits
+* Review code
+* Track changes
 * Manage branches
-* Track contributions
+* Collaborate efficiently
 
-It is part of daily workflow.
-
----
-
-# Summary
-
-You can now:
-
-* View repository online
-* Browse files
-* View commit history
-* Edit files directly
-* Create and delete files
-* Switch branches
-
-All using GitHub website.
+GitHub provides visibility and control.
 
 ---
 
-# Result
+## What You Achieved
 
-You now understand both:
+You can now use GitHub visually.
 
-Terminal workflow
-and
-GitHub web interface
+You understand how to:
 
-You have full control of your project.
+* View files
+* View commits
+* View branches
+* Inspect changes
+* Edit files
+
+You now have complete control over your repository.
+
+Terminal gives you power.
+
+GitHub gives you visibility.
+
+Together, they form the complete professional Git workflow.
+
+---
+
+## Next Step
+
+You will now learn how professional teams collaborate using Pull Requests.
+
+This is the foundation of team-based development.

@@ -58,6 +58,8 @@ All of them interact with the same GitHub repository.
 
 Git allows multiple developers to collaborate efficiently by sharing and synchronizing code through a central repository. 
 
+Git keeps track of every change made by every developer.
+
 This is what makes modern software development possible.
 
 ---
@@ -78,7 +80,7 @@ This can create conflicts, overwrite changes, or break the project.
 
 This is dangerous.
 
-Professional projects must remain stable at all times.
+Professional projects must always remain stable and functional at all times.
 
 The main version of the project must always be reliable.
 

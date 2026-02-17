@@ -1,184 +1,116 @@
-# Chapter 13 — Pull Requests (Professional Collaboration)
+# Chapter 13 — Pull Requests (Professional Team Collaboration)
 
-Pull Requests are one of the most important features of GitHub.
+Until now, you learned how to:
 
-They allow developers to safely propose changes to a project.
+* Create branches
+* Make changes
+* Commit work
+* Merge branches
 
-Pull Requests are used in:
+You have been working alone.
 
-* Software companies
-* Open source projects
-* Professional teams
-* Personal projects
+But professional software is built by teams.
 
-This is how modern software is built.
+Multiple developers work on the same project.
 
----
-
-# What is a Pull Request?
-
-A Pull Request (PR) is a request to merge changes from one branch into another branch.
-
-Usually:
-
-```
-new-feature → main
-```
-
-It means:
-
-"I made changes in my branch. Please review and merge them into main."
-
-Pull Requests allow review before merging.
-
-This keeps the main branch safe.
+Pull Requests make this collaboration safe and organized.
 
 ---
 
-# Why Pull Requests Exist
+## What is a Pull Request
 
-Pull Requests prevent accidental damage.
+A Pull Request is a request to merge your branch into another branch.
 
-Without Pull Requests:
+Usually, this means merging your branch into the main branch.
 
-Developer edits main directly
-Mistake breaks entire project
+It is called a Pull Request because you are requesting the project to pull your changes into the main code.
 
-With Pull Requests:
+Pull Requests allow changes to be reviewed before merging.
 
-Developer creates branch
-Makes changes safely
-Requests review
-Merge only if approved
-
-Main remains safe.
+This protects the project from errors.
 
 ---
 
-# Real World Example
+## Why Pull Requests are Important
 
-Imagine a company website.
+Professional teams do not merge branches directly.
 
-Main branch:
+Instead, they create Pull Requests.
 
-```
-Live website
-```
+This allows teams to:
 
-Developer creates branch:
+* Review code
+* Detect mistakes
+* Discuss changes
+* Ensure quality
 
-```
-add-login-feature
-```
+Pull Requests act as a safety checkpoint.
 
-Developer builds login system.
-
-Before adding to main, developer creates Pull Request.
-
-Team reviews code.
-
-If approved → merge
-If rejected → fix issues
-
-This protects production code.
+They ensure only safe and correct code enters the main branch.
 
 ---
 
-# Step 1 — Create a Branch Locally
+## Real-World Workflow
 
-Open terminal.
+Professional workflow follows these steps:
 
-Run:
+Step 1 — Create branch
 
 ```bash
-git checkout -b add-feature
+git checkout -b new-feature
 ```
 
-Make changes.
+Step 2 — Make changes
 
-Example:
-
-Edit notes.txt
-
-Add:
-
-```
-This feature was added using pull request workflow.
+```bash
+nano feature.txt
 ```
 
-Save file.
-
-Commit changes:
+Step 3 — Commit changes
 
 ```bash
 git add .
 git commit -m "Added new feature"
 ```
 
-Push branch to GitHub:
+Step 4 — Push branch to GitHub
 
 ```bash
-git push origin add-feature
+git push origin new-feature
 ```
 
-Branch is now on GitHub.
+Your branch is now available on GitHub.
 
 ---
 
-# Step 2 — Open GitHub Repository
+## Creating Pull Request on GitHub
 
-Go to:
+Go to your repository on GitHub.
 
-```
-https://github.com/yourusername/my-first-project
-```
-
-GitHub will show:
+You will see a message:
 
 ```
 Compare & pull request
 ```
 
-Click it.
+Click this button.
 
----
+GitHub will show:
 
-# Step 3 — Create Pull Request
-
-GitHub shows:
-
-```
 Base branch: main
-Compare branch: add-feature
-```
-
-This means:
-
-Merge add-feature into main.
-
-Enter title:
-
-```
-Added new feature
-```
-
-Enter description:
-
-```
-This pull request adds new feature safely.
-```
+Compare branch: new-feature
 
 Click:
 
 ```
-Create pull request
+Create Pull Request
 ```
 
-Pull Request is now created.
+Your Pull Request is now created.
 
 ---
 
-# Step 4 — Review Pull Request
+## What Happens in a Pull Request
 
 GitHub shows:
 
@@ -186,114 +118,137 @@ GitHub shows:
 * Lines added
 * Lines removed
 
-You can review all changes.
+This allows review of changes.
 
-This ensures safety.
+Team members can:
 
----
+* Review code
+* Suggest changes
+* Approve changes
 
-# Step 5 — Merge Pull Request
-
-Click:
-
-```
-Merge pull request
-```
-
-Confirm merge.
-
-GitHub merges branch into main.
-
-Main is now updated safely.
+This ensures safety and quality.
 
 ---
 
-# Step 6 — Delete Branch (Optional)
+## Merging Pull Request
 
-After merge, branch is no longer needed.
+After review, click:
 
-GitHub shows:
+```
+Merge Pull Request
+```
+
+GitHub will merge the branch into main.
+
+Your feature becomes part of the main project.
+
+The project is safely updated.
+
+---
+
+## Pull Request vs Direct Merge
+
+Direct merge:
+
+Fast
+But risky
+
+Pull Request merge:
+
+Safe
+Reviewed
+Professional
+
+Professional teams always use Pull Requests.
+
+---
+
+## After Merge
+
+Your branch is no longer needed.
+
+GitHub may show:
 
 ```
 Delete branch
 ```
 
-Click it.
+Click it to clean up.
 
-Cleanup keeps repository organized.
+Your changes remain safely in main.
 
----
-
-# What Happens Internally
-
-Before merge:
-
-```
-main:        A --- B --- C
-
-add-feature:           D --- E
-```
-
-After merge:
-
-```
-main: A --- B --- C --- D --- E
-```
-
-History is preserved.
-
-Nothing is lost.
+The branch is removed.
 
 ---
 
-# Why Companies Require Pull Requests
+## Professional Team Example
 
-Pull Requests allow:
+Developer A:
 
+Creates branch
+Adds feature
+Creates Pull Request
+
+Team reviews code
+
+Pull Request is approved
+
+Changes merged into main
+
+Project is safely updated.
+
+This workflow is used by companies worldwide.
+
+---
+
+## Git and GitHub Roles
+
+Git handles:
+
+* Local changes
+* Commits
+* Branches
+
+GitHub handles:
+
+* Pull Requests
 * Code review
-* Bug detection
-* Safe merging
 * Team collaboration
-* Change tracking
 
-This prevents production failures.
-
-Every professional team uses Pull Requests.
+Together, they create a complete professional system.
 
 ---
 
-# Pull Request Workflow Summary
+## Commands Learned
 
-Step 1 — Create branch
-Step 2 — Make changes
-Step 3 — Commit changes
-Step 4 — Push branch
-Step 5 — Create Pull Request
-Step 6 — Review changes
-Step 7 — Merge safely
+Push branch:
 
-This is professional workflow.
+```bash
+git push origin branch-name
+```
+
+Create Pull Request:
+
+Done on GitHub website
+
+Merge Pull Request:
+
+Done on GitHub website
 
 ---
 
-# Summary
+## What You Achieved
+
+You learned the most important professional Git workflow.
 
 You can now:
 
-* Create branches
+* Create feature branches
 * Push branches to GitHub
 * Create Pull Requests
-* Review changes
-* Merge safely
+* Merge changes safely
+* Collaborate professionally
 
-You now understand professional GitHub workflow.
+This is how real software is built.
 
----
-
-# Result
-
-You have completed Part 2 — Professional Workflow.
-
-You can now work safely in teams.
-
-You are using GitHub like a professional developer.
+You now understand professional Git and GitHub workflow.

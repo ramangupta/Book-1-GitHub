@@ -1,124 +1,140 @@
-# Chapter 9 — Merging Changes
+# Chapter 9 — Merging Changes (Combining Branch Work Safely)
 
-Branching allows you to work safely.
+In the previous chapter, you learned how to create branches.
 
-But at some point, you want to bring your changes back into the main branch.
+Branches allow you to work safely without affecting the main project.
 
-This process is called merging.
+You can add features, fix bugs, and experiment in isolation.
 
-Merging combines changes from one branch into another.
+But eventually, your work must become part of the main project.
 
-Most commonly:
+This is called merging.
 
-new-feature → main
+---
+
+## What is Merging
+
+Merging means combining changes from one branch into another branch.
+
+Most commonly, you merge a feature branch into the main branch.
+
+This allows your new work to become part of the main project.
+
+Think of it like this:
+
+main branch = stable project
+feature branch = new work
+
+Merging combines the new work into the stable project.
 
 ---
 
 ## Why Merging is Needed
 
-You created a branch to experiment safely.
+When you create a branch, your changes stay in that branch.
 
-Now the feature works correctly.
+The main branch does not see those changes.
 
-You want the main project to include this feature.
+This is intentional.
 
-So you merge the branch into main.
+Branches protect the main project from unfinished or experimental work.
 
-Result:
+When your work is complete and safe, you merge it into main.
 
-Main branch gets the new feature.
-
----
-
-## Visual Understanding
-
-Before merge:
-
-Main branch:
-
-A --- B --- C
-
-New-feature branch:
-
-A --- B --- C --- D --- E
-
-Main does not yet have D and E.
-
-After merge:
-
-Main branch:
-
-A --- B --- C --- D --- E
-
-Both branches now contain the same changes.
+This updates the main project safely.
 
 ---
 
-## Step 1 — Switch to Main Branch
+## Example Scenario
 
-Always merge into the target branch.
+You create a branch:
 
-In this case, target is main.
+```bash
+git checkout -b new-feature
+```
 
-Run:
+You create a file:
+
+```bash
+nano feature.txt
+```
+
+Add content:
+
+```
+This is a new feature
+```
+
+Save the file.
+
+Commit the change:
+
+```bash
+git add .
+git commit -m "Added new feature"
+```
+
+This change exists only in the branch.
+
+Main branch remains unchanged.
+
+---
+
+## Switch Back to Main Branch
+
+Before merging, switch to the main branch:
 
 ```bash
 git checkout main
 ```
 
-You are now on main branch.
+You must always switch to the branch that will receive the changes.
 
-Verify:
-
-```bash
-git branch
-```
-
-Output:
-
-```
-* main
-  new-feature
-```
+In this case, main will receive the changes.
 
 ---
 
-## Step 2 — Merge the Branch
+## Merge the Branch
 
-Run:
+Run the merge command:
 
 ```bash
 git merge new-feature
 ```
 
-Git will merge the changes.
+Example output:
 
-Output may look like:
-
-```
+```bash
 Updating a1b2c3d..e4f5g6h
 Fast-forward
- notes.txt | 1 +
+ feature.txt | 1 +
  1 file changed, 1 insertion(+)
+ create mode 100644 feature.txt
 ```
 
-Merge is complete.
+This means the merge was successful.
 
-Main now contains the changes.
+The changes from new-feature are now part of main.
 
 ---
 
-## Step 3 — Verify the Merge
+## Verify the Merge
 
-Open your file:
+Check files:
 
 ```bash
-code notes.txt
+ls
 ```
 
-You will now see the new feature content.
+You will see:
 
-This confirms merge was successful.
+```
+feature.txt
+```
+
+The file from the branch is now in main.
+
+The merge is complete.
 
 ---
 
@@ -126,74 +142,102 @@ This confirms merge was successful.
 
 Before merge:
 
-main → A → B → C
-new-feature → A → B → C → D → E
+main branch:
+
+```
+project files
+```
+
+feature branch:
+
+```
+project files
+feature.txt
+```
 
 After merge:
 
-main → A → B → C → D → E
+main branch:
 
-Git moved main forward.
+```
+project files
+feature.txt
+```
 
-No data was lost.
+The main branch now includes the new feature.
 
 ---
 
-## Delete the Branch (Optional but Recommended)
+## Branch Still Exists
 
-Once merged, branch is no longer needed.
+After merging, the branch still exists.
 
-Delete it:
+Check branches:
+
+```bash
+git branch
+```
+
+Output:
+
+```bash
+* main
+  new-feature
+```
+
+The branch is still available.
+
+You can delete it if no longer needed.
+
+---
+
+## Delete the Branch (Optional)
+
+Run:
 
 ```bash
 git branch -d new-feature
 ```
 
-Output:
+This deletes the branch.
 
-```
-Deleted branch new-feature
-```
+Your changes remain in main.
 
-Your repository is now clean.
+Deleting the branch does not remove the merged work.
+
+---
+
+## Professional Workflow Summary
+
+Professional developers follow this workflow:
+
+1. Create branch
+2. Work in branch
+3. Commit changes
+4. Merge branch into main
+5. Delete branch
+
+This keeps the project safe and organized.
+
+Main branch remains stable.
+
+Branches allow safe development.
+
+Merging safely integrates completed work.
 
 ---
 
 ## Important Rule
 
-Always merge into main.
+Never merge unfinished or broken work into main.
 
-Do NOT merge main into feature branch unless necessary.
+Only merge when your changes are complete and safe.
 
-Correct workflow:
-
-1. Create branch
-2. Make changes
-3. Commit changes
-4. Switch to main
-5. Merge branch into main
+This protects the stability of the project.
 
 ---
 
-## Real World Example
-
-You create branch:
-
-login-feature
-
-You build login system.
-
-It works correctly.
-
-You merge:
-
-login-feature → main
-
-Now main has login system.
-
----
-
-## Professional Workflow Summary
+## Commands Learned
 
 Create branch:
 
@@ -201,20 +245,13 @@ Create branch:
 git checkout -b new-feature
 ```
 
-Make changes and commit:
-
-```bash
-git add .
-git commit -m "Added feature"
-```
-
-Switch to main:
+Switch branch:
 
 ```bash
 git checkout main
 ```
 
-Merge:
+Merge branch:
 
 ```bash
 git merge new-feature
@@ -228,10 +265,17 @@ git branch -d new-feature
 
 ---
 
-## Result
+## What You Achieved
 
-Your feature is now part of the main project.
+You learned how to safely combine branch work into the main project.
 
-Project safely grows without breaking existing code.
+You can now:
 
-This is the foundation of professional software development.
+* Create isolated branches
+* Work safely
+* Merge completed work
+* Maintain project stability
+
+This is the core of professional Git workflow.
+
+Next, you will learn about merge conflicts and how to resolve them.
