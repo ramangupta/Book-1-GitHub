@@ -8,6 +8,8 @@ This is how developers get jobs, clients, and credibility.
 
 Your GitHub profile becomes your public proof of skill.
 
+![GitHub Professional Workflow](images/github-professional-workflow.png)
+
 ---
 
 # Why GitHub is Your Public Resume
