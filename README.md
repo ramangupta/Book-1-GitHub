@@ -1,127 +1,239 @@
-# How to Use GitHub — Complete Beginner to Professional Guide
+<p align="center">
+  <img src="images/book-cover.png" alt="Mastering Git and GitHub Book Cover" width="400">
+</p>
 
-![Book Cover](images/book-cover.png)
+# Mastering Git and GitHub – From Beginner to Professional
 
-This book teaches Git and GitHub from absolute beginner level to professional workflow.
+A complete, practical guide to understanding Git and GitHub, designed to take you from absolute beginner to real-world professional workflows.
 
-It is designed for developers, students, engineers, and anyone who wants to build real-world software projects safely and professionally.
-
-This is a practical, hands-on guide — not theory.
-
----
-
-# What You Will Learn
-
-By the end of this book, you will be able to:
-
-* Understand how Git works internally
-* Track and manage file changes safely
-* Use GitHub to store and share projects
-* Work with branches professionally
-* Collaborate with other developers
-* Build a public developer portfolio
-* Use GitHub in real-world production environments
+This book focuses not just on commands, but on building a clear mental model of how Git works.
 
 ---
 
-# Book Structure
+## Who this book is for
+
+This book is designed for:
+
+• Absolute beginners  
+• Self-taught developers  
+• Students preparing for software careers  
+• Developers confused by Git  
+• Anyone building a professional GitHub portfolio  
+
+No prior experience is required.
 
 ---
 
-## Part 1 — Foundations
+## What you will learn
 
-Core concepts every developer must know.
+By the end of this book, you will understand:
 
-Location: `Part-1-Foundations/`
-
-Chapters:
-
-* Chapter 1 — What is Git and Why It Exists
-* Chapter 2 — Installing Git and Creating Your First Repository
-* Chapter 3 — Connecting Your Project to GitHub
-* Chapter 4 — Making Changes and Saving Versions
-* Chapter 5 — Adding New Files
-* Chapter 6 — Cloning a Repository
-* Chapter 7 — Pulling Latest Changes
-
-After Part 1, you can safely manage your own projects.
+• How Git works internally  
+• How to track and manage changes  
+• How professional branching workflows operate  
+• How to safely fix mistakes  
+• How to collaborate using GitHub  
+• Advanced Git techniques used by professionals  
+• How to build a strong developer portfolio  
 
 ---
 
-## Part 2 — Professional Workflow
+## Book Structure
 
-How real developers work safely using branches and collaboration.
+### Part 1 – Foundations
+Core mental models and fundamental concepts  
+Understanding repositories, commits, and version tracking  
 
-Location: `Part-2-Professional-Workflow/`
+Folder: # Mastering Git and GitHub – From Beginner to Professional
 
-Chapters:
+A complete, practical guide to understanding Git and GitHub, designed to take you from absolute beginner to real-world professional workflows.
 
-* Chapter 8 — Branching
-* Chapter 9 — Merging Changes
-* Chapter 10 — Fixing Mistakes
-* Chapter 11 — Viewing File History
-* Chapter 12 — Using GitHub Web Interface
-* Chapter 13 — Pull Requests
-
-After Part 2, you can work in teams professionally.
+This book focuses not just on commands, but on building a clear mental model of how Git works.
 
 ---
 
-## Part 3 — Real World Usage
+## Who this book is for
 
-Industry-level GitHub usage and best practices.
+This book is designed for:
 
-Location: `Part-3-Real-World/`
+• Absolute beginners  
+• Self-taught developers  
+• Students preparing for software careers  
+• Developers confused by Git  
+• Anyone building a professional GitHub portfolio  
 
-Chapters:
-
-* Chapter 14 — Building a Public Portfolio
-* Chapter 15 — Contributing to Open Source
-* Chapter 16 — Using GitHub with VSCode
-* Chapter 17 — GitHub Best Practices
-
-After Part 3, you are industry-ready.
+No prior experience is required.
 
 ---
 
-# Repository Structure
+## What you will learn
 
-```
-Book-1-GitHub/
+By the end of this book, you will understand:
 
-├── Part-1-Foundations/
-│
-├── Part-2-Professional-Workflow/
-│
-├── Part-3-Real-World/
-│
-├── images/
-│
-└── README.md
-```
+• How Git works internally  
+• How to track and manage changes  
+• How professional branching workflows operate  
+• How to safely fix mistakes  
+• How to collaborate using GitHub  
+• Advanced Git techniques used by professionals  
+• How to build a strong developer portfolio  
 
 ---
 
-# Who This Book Is For
+## Book Structure
 
-* Absolute beginners
-* Students learning programming
-* Developers new to GitHub
-* Engineers building real projects
-* Anyone wanting professional Git skills
+### Part 1 – Foundations
+Core mental models and fundamental concepts  
+Understanding repositories, commits, and version tracking  
 
-No prior Git experience required.
+Folder: # Mastering Git and GitHub – From Beginner to Professional
 
----
+A complete, practical guide to understanding Git and GitHub, designed to take you from absolute beginner to real-world professional workflows.
 
-# Why This Book Exists
-
-Most Git tutorials are confusing.
-
-This guide explains everything step-by-step, clearly, and practically.
+This book focuses not just on commands, but on building a clear mental model of how Git works.
 
 ---
 
-# License
+## Who this book is for
 
-This project is open-source and available for learning purposes.
+This book is designed for:
+
+• Absolute beginners  
+• Self-taught developers  
+• Students preparing for software careers  
+• Developers confused by Git  
+• Anyone building a professional GitHub portfolio  
+
+No prior experience is required.
+
+---
+
+## What you will learn
+
+By the end of this book, you will understand:
+
+• How Git works internally  
+• How to track and manage changes  
+• How professional branching workflows operate  
+• How to safely fix mistakes  
+• How to collaborate using GitHub  
+• Advanced Git techniques used by professionals  
+• How to build a strong developer portfolio  
+
+---
+
+## Book Structure
+
+### Part 1 – Foundations
+Core mental models and fundamental concepts  
+Understanding repositories, commits, and version tracking  
+
+Folder:     # Mastering Git and GitHub – From Beginner to Professional
+
+A complete, practical guide to understanding Git and GitHub, designed to take you from absolute beginner to real-world professional workflows.
+
+This book focuses not just on commands, but on building a clear mental model of how Git works.
+
+---
+
+## Who this book is for
+
+This book is designed for:
+
+• Absolute beginners  
+• Self-taught developers  
+• Students preparing for software careers  
+• Developers confused by Git  
+• Anyone building a professional GitHub portfolio  
+
+No prior experience is required.
+
+---
+
+## What you will learn
+
+By the end of this book, you will understand:
+
+• How Git works internally  
+• How to track and manage changes  
+• How professional branching workflows operate  
+• How to safely fix mistakes  
+• How to collaborate using GitHub  
+• Advanced Git techniques used by professionals  
+• How to build a strong developer portfolio  
+
+---
+
+## Book Structure
+
+### Part 1 – Foundations
+Core mental models and fundamental concepts  
+Understanding repositories, commits, and version tracking  
+
+Folder: Part-1-Foundations/
+
+---
+
+### Part 2 – Professional Workflow
+Daily Git workflows used by real developers  
+Branching, merging, fixing mistakes, and history  
+
+Folder: Part-2-Professional-Workflow/
+
+---
+
+### Part 3 – Advanced Git
+Advanced techniques for power users  
+Rebase, reset, advanced history manipulation, and recovery  
+
+Folder: Part-3-Advanced-Git/
+
+---
+
+### Part 4 – Real-World Usage
+Applying Git and GitHub in real scenarios  
+Developer portfolios, open source, VSCode integration, and best practices  
+
+Folder: Part-4-Real-World/
+
+---
+
+## How to read this book
+
+Read in order from Part 1 to Part 4.
+
+Each part builds on the previous one.
+
+---
+
+## Why this book exists
+
+Git becomes simple once the mental model becomes clear.
+
+This book exists to provide that clarity.
+
+---
+
+## Author
+
+Raman Gupta
+
+---
+
+## Contributing
+
+Suggestions and improvements are welcome.
+
+You can open an Issue or Pull Request.
+
+---
+
+## Final Note
+
+Git is not difficult.
+
+It only appears difficult until you understand it.
+
+
+
+

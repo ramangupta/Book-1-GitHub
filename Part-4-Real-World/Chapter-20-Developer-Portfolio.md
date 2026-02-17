@@ -110,9 +110,9 @@ An AI-powered trading analysis tool that identifies high-probability opportuniti
 
 ## Features
 
-- Real-time analysis
-- Momentum detection
-- Clean dashboard
+- Real-time analysis  
+- Momentum detection  
+- Clean dashboard  
 
 ## Screenshot
 

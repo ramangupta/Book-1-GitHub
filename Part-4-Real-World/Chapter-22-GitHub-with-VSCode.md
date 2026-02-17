@@ -44,6 +44,26 @@ This is your Git control panel.
 
 ---
 
+# First-Time Setup (One-Time Step)
+
+Before using Git in VSCode, ensure Git is installed.
+
+Check using terminal:
+
+```bash
+git --version
+```
+
+VSCode automatically detects Git.
+
+You will see branch name in bottom-left corner.
+
+If not, install Git and restart VSCode.
+
+This setup is required only once.
+
+---
+
 # Understanding the Source Control Panel
 
 The Source Control panel shows:
@@ -160,6 +180,30 @@ Your GitHub repository is now updated.
 
 ---
 
+# Signing into GitHub in VSCode
+
+VSCode allows direct GitHub integration.
+
+Click Account icon (bottom-left).
+
+Click:
+
+```
+Sign in to GitHub
+```
+
+Authorize VSCode.
+
+This allows:
+
+* Push without terminal
+* Pull without terminal
+* Create pull requests directly
+
+VSCode becomes fully connected to GitHub.
+
+---
+
 # Step 5 — Switch Branch Using VSCode
 
 Look at bottom-left corner.
@@ -272,6 +316,6 @@ You learned:
 * How to switch branches
 * How to create branches
 
-You can now use Git without terminal.
+You can now use Git with or without the terminal.
 
 You are working like a professional developer.

@@ -96,7 +96,7 @@ Then merge.
 
 This prevents breaking your main project.
 
-Professionals NEVER experiment on main.
+Professionals never experiment directly on main branch.
 
 ---
 
@@ -265,6 +265,65 @@ git push
 This creates backup.
 
 Prevents data loss.
+
+---
+
+# Best Practice 11 — Never Commit Secrets
+
+Never commit sensitive information.
+
+Examples:
+
+* API keys
+* Passwords
+* Private tokens
+* Database credentials
+
+Bad example:
+
+```
+API_KEY = "abc123secret"
+```
+
+If secrets are committed, anyone can access them.
+
+This creates serious security risk.
+
+Use environment variables instead.
+
+Example:
+
+```
+API_KEY = os.getenv("API_KEY")
+```
+
+Always add secret files to `.gitignore`.
+
+This protects your project and your security.
+
+---
+
+# Best Practice 12 — Protect Main Branch
+
+Main branch should remain stable.
+
+Do not push experimental code to main.
+
+Use branches for development.
+
+Example:
+
+```
+git checkout -b new-feature
+```
+
+Make changes in branch.
+
+Then merge after testing.
+
+This keeps main branch safe.
+
+This is standard professional practice.
 
 ---
 

@@ -102,9 +102,34 @@ Good projects welcome beginners.
 
 ---
 
+# Beginner-Friendly Contribution Strategy
+
+You do not need to start with complex contributions.
+
+Start with simple contributions such as:
+
+* Fix spelling mistakes
+* Improve documentation
+* Add examples
+* Improve README clarity
+
+Search GitHub for:
+
+```
+good first issue
+```
+
+Many projects label beginner-friendly tasks.
+
+These are designed for new contributors.
+
+This is the easiest and safest way to begin.
+
+Even small contributions build credibility.
+
 # Step 2 — Fork the Repository
 
-Fork means copying the repository to your GitHub account.
+Fork means creating your own copy of the repository in your GitHub account.
 
 Click:
 
@@ -206,6 +231,20 @@ Create Pull Request
 This sends your changes to original project.
 
 ---
+
+# Contribution Appears on Your GitHub Profile
+
+After your pull request is accepted:
+
+Your GitHub profile shows your contribution.
+
+This becomes public proof of your work.
+
+Employers and developers can see this.
+
+Your contribution history grows over time.
+
+This strengthens your professional credibility.
 
 # What Happens Next
 
