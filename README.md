@@ -4,6 +4,8 @@
 
 # Mastering Git and GitHub – From Beginner to Professional
 
+A practical, mental-model-first guide to mastering Git and GitHub for real-world development.
+
 A complete, practical guide to understanding Git and GitHub, designed to take you from absolute beginner to real-world professional workflows.
 
 This book focuses not just on commands, but on building a clear mental model of how Git works.
@@ -71,6 +73,15 @@ Developer portfolios, open source, VSCode integration, and best practices
 Folder: Part-4-Real-World/
 
 ---
+
+## Repository Structure:
+
+Part-1-Foundations/
+Part-2-Professional-Workflow/
+Part-3-Advanced-Git/
+Part-4-Real-World/
+images/
+README.md
 
 ## How to read this book
 
