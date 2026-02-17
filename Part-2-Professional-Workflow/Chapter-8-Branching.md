@@ -51,6 +51,9 @@ Version 3 → Experiment 1 → Experiment 2
 
 Main branch is untouched.
 
+![Git Branching Concept](images/human_git_branch.png)
+
+
 ---
 
 # Real World Analogy

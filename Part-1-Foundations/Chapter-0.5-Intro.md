@@ -6,12 +6,33 @@ It is designed for someone who has never used Git or GitHub before, and may not 
 
 The reader will learn what Git is, why it exists, and how it solves real problems developers face. They will understand how files are tracked, how changes are recorded, and how GitHub stores and manages projects in the cloud.
 
+---
+
+## Roadmap of the Book
+
+![Book Roadmap](../images/book-roadmap.png)
+
+- **Part 1: Foundations** — Git basics, commits, push/pull  
+- **Part 2: Professional Workflow** — branching, merging, pull requests  
+- **Part 3: Real-World** — GitHub with VSCode, developer portfolios, contributing to open-source
+
+---
+
+## What You Will Learn in Part 1
+
+> **By the end of this part, you will:**  
+> - Understand what Git is and why it exists  
+> - Track changes and manage files confidently  
+> - Use GitHub to store and manage projects in the cloud
+
+---
+
+## Key Concepts Visual
+
+![Local vs Remote Repos](../images/local-remote.png)
+
 Every concept is introduced in a simple, practical way, ensuring the reader does not just memorize commands, but understands what is actually happening behind the scenes.
 
 By the end of Part 1, the reader will no longer see GitHub as something confusing or intimidating. They will understand its purpose, its structure, and how to use it for their own projects.
 
-Result: The reader gains a strong and clear foundation.
-
----
-
-
+**Result:** The reader gains a strong and clear foundation.
