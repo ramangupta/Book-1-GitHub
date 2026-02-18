@@ -29,9 +29,10 @@ If not installed, install using:
 3. Use the **default options** unless you have a reason to change them.
 
 ### macOS
-1. On macOS, you can install Git using Homebrew:
-   ```bash
-   brew install git
+On macOS, you can install Git using Homebrew:
+```bash
+brew install git
+```
 
 ### Linux
 
@@ -238,4 +239,4 @@ You have now:
 - Made your first commit
 - Viewed commit history
 
-You are now using Git.
+You are now using Git !
