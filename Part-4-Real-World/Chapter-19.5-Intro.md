@@ -33,7 +33,7 @@ GitHub becomes a permanent part of your professional identity.
 
 ---
 
-# Chapter 20 — Building Your Public Developer Portfolio
+## Chapter 20 — Building Your Public Developer Portfolio
 
 Learn how to use GitHub as a professional portfolio.
 
@@ -49,7 +49,7 @@ Result: Your GitHub becomes a professional identity.
 
 ---
 
-# Chapter 21 — Contributing to Open Source Projects
+## Chapter 21 — Contributing to Open Source Projects
 
 Learn how developers contribute to global projects.
 
@@ -65,7 +65,7 @@ Result: You participate in real-world software development.
 
 ---
 
-# Chapter 22 — Using GitHub with VSCode
+## Chapter 22 — Using GitHub with VSCode
 
 Learn professional integration with VSCode.
 
@@ -81,7 +81,7 @@ Result: Faster and easier workflow.
 
 ---
 
-# Chapter 23 — GitHub Best Practices (Professional Standards)
+## Chapter 23 — GitHub Best Practices (Professional Standards)
 
 Learn how professionals use GitHub properly.
 
@@ -97,7 +97,22 @@ Result: Industry-level GitHub skills.
 
 ---
 
-# Final Result After Part 3
+## Chapter 24 - GitHub in Real World
+
+
+Learn how to apply GitHub skills in real-world scenarios, from personal projects to professional development.
+
+Topics covered:
+
+* Building and maintaining a developer portfolio
+* Contributing to open source projects
+* Collaborating in distributed teams
+* Applying best practices in live projects
+* Leveraging GitHub for career growth
+
+Result: Practical experience using GitHub like a professional, ready for real projects or employment.
+
+## Final Result After Part 3
 
 Reader becomes:
 

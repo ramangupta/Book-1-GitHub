@@ -71,9 +71,6 @@ To track them, we use `git add`.
 | example.txt | staged     | Added with `git add`, ready to commit |
 | example.txt | committed  | Saved in Git history |
 
-![Git Stages](../images/Git_3_stages.png)
-
-
 ---
 
 ## Step 3 — Add the New File (Staging)
@@ -83,6 +80,7 @@ Run:
 ```bash
 git add ideas.txt
 ```
+
 Staging means telling Git, “Include this file in the next commit.”
 Until you commit, the file isn’t saved in history.
 
