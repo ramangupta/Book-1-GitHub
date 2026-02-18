@@ -10,9 +10,15 @@ The roadmap below shows how this book is structured and where this part fits in:
 
 ![Book Roadmap](../images/book-roadmap.png)
 
-- **Part 1: Foundations** — Git basics, commits, push/pull  
-- **Part 2: Professional Workflow** — branching, merging, pull requests  
-- **Part 3: Real‑World** — GitHub with VSCode, developer portfolios, contributing to open‑source
+This book is structured into four main parts:
+
+- **Part 1 – Foundations:** Learn the basics of Git, version control, and setting up your first repositories.  
+- **Part 2 – Professional Workflow:** Dive into branching, merging, collaboration, and professional Git workflows.  
+- **Part 3 – Advanced Git:** Explore advanced topics like rebasing, stashing, and real-world problem solving.  
+- **Part 4 – Real-World Usage:** Build your developer portfolio, contribute to open source, and apply best practices in real projects.
+
+By the end of this book, you will not only understand Git and GitHub deeply, but also know how to use them professionally in real-world projects.
+
 
 ## What You Will Learn in Part 1
 
